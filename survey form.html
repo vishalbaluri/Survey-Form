@@ -1,0 +1,119 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Survey Form</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <section class="container">
+    <header>
+      <h1 id="title">Feedback Survey Form</h1>
+      <p id="description">Your input matters—please take a moment to fill out this survey.</p>
+    </header>
+
+    <form id="survey-form">
+      <section class="field">
+        <label for="name" id="name-label">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="ENTER YOUR FULL NAME"
+          required
+        />
+      </section>
+
+      <section class="field">
+        <label for="email" id="email-label">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="ENTER YOUR EMAIL ADDRESS"
+          required
+        />
+      </section>
+
+      <section class="field">
+        <label for="number" id="number-label">Age (18–99)</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          min="18"
+          max="99"
+          placeholder="ENTER YOUR AGE"
+          required
+        />
+      </section>
+
+      <section class="field">
+        <label for="dropdown">How did you discover us?</label>
+        <select id="dropdown" name="source">
+          <option value="web">Web Search</option>
+          <option value="friend">Referred by a Friend</option>
+          <option value="ad">Online Advertisement</option>
+          <option value="other">Other</option>
+        </select>
+      </section>
+
+      <fieldset class="field">
+        <legend>Overall Experience</legend>
+        <label>
+          <input type="radio" name="rating" value="excellent" required />
+          Excellent
+        </label>
+        <label>
+          <input type="radio" name="rating" value="good" />
+          Good
+        </label>
+        <label>
+          <input type="radio" name="rating" value="average" />
+          Average
+        </label>
+        <label>
+          <input type="radio" name="rating" value="poor" />
+          Poor
+        </label>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Features Utilized</legend>
+        <label>
+          <input type="checkbox" name="features" value="ui" />
+          User Interface
+        </label>
+        <label>
+          <input type="checkbox" name="features" value="speed" />
+          Performance
+        </label>
+        <label>
+          <input type="checkbox" name="features" value="support" />
+          Customer Support
+        </label>
+        <label>
+          <input type="checkbox" name="features" value="pricing" />
+          Pricing Plans
+        </label>
+      </fieldset>
+
+      <section class="field">
+        <label for="comments">Comments or Suggestions</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          placeholder="Let us know your thoughts..."
+        ></textarea>
+      </section>
+
+      <div class="field submit-area">
+        <button type="submit" id="submit">Send Feedback</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
