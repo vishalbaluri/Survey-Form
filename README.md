@@ -15,6 +15,4 @@ The form collects user feedback, including name, email, age, experience rating, 
 - Radio buttons for experience rating  
 - Checkbox options to select utilized features  
 - Textarea for additional comments or suggestions  
-- Submit button to send feedback  
-
-## 🗃️ File Structure  
+- Submit button to send feedback   
